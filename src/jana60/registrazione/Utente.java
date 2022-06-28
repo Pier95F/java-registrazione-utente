@@ -19,7 +19,7 @@ public class Utente {
 	
 	// Costruttori:
 	
-	public Utente(String nome, String cognome, String email, String password, int eta) {
+	public Utente(String nome, String cognome, String email, String password, int eta) throws Exception {
 		
 		super();
 		this.nome = nome;
@@ -97,8 +97,9 @@ public class Utente {
 	}
 	
 	@Override
-	public String tostring() {
-		return "Nuovo utente: " + nome + " " + cognome + "\nE-mail: " + email + "\nPassword: " + password + "\nEta: " + eta;
+	public String toString() {
+		
+		return "Nuovo utente: " + nome + " " + cognome + "\nE-mail: " + email + "\nPassword: " + password + "\nEta: " + eta + " anni";
 	}
 	
 	
